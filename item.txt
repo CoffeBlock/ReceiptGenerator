@@ -1,0 +1,7 @@
+Banana      |
+Apple       |
+Egg         |
+Bread       |
+BellPepper  |
+Onion       |
+Water       |

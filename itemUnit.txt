@@ -1,0 +1,7 @@
+each    |
+pound   |
+box     |
+bag     |
+pound   |
+pound   |
+each    |
