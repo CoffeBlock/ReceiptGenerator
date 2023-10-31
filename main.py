@@ -46,23 +46,42 @@ def PrintReceipt():
 	f.write(out)
 	
 
-print("Store info: \nname: SweetyMart \naddress: 123321 Funny St, Farmland, V0V 4N4\ntel:604-555-1234\nwebsite: www.sweetymark.ca \n\nCashier ID: goody-mark \nDate time also should be on the receipt\n")
+print("Store info:".center(53))
+print("name: SweetyMart".center(53))
+print("address: 123321 Funny St, Farmland, V0V 4N4".center(53))
+print("tel:604-555-1234".center(53))
+print("website: www.sweetymark.ca".center(53))
+print("".center(53))
+print("".center(53))
+print("Cashier ID: goody-mark".center(53))
+print("Date time also should be on the receipt".center(53))
+print("".center(53))
 print("*****************************************************")
 print("Item        | Unit    | Price  |  Amount  |    Total")
 
 with open('Receipt.txt', 'w') as f:
-    f.write('Store info: \nname: SweetyMart \naddress: 123321 Funny St, Farmland, V0V 4N4\ntel:604-555-1234\nwebsite: www.sweetymark.ca \n\nCashier ID: goody-mark \nDate time also should be on the receipt\n')
-    f.write('*****************************************************\n')
-    f.write('Item        | Unit    | Price  |  Amount  |    Total\n')
+	f.write("Store info:".center(53) + "\n")
+	f.write("name: SweetyMart".center(53) + "\n")
+	f.write("address: 123321 Funny St, Farmland, V0V 4N4".center(53) + "\n")
+	f.write("tel:604-555-1234".center(53) + "\n")
+	f.write("website: www.sweetymark.ca".center(53) + "\n")
+	f.write("".center(53) + "\n")
+	f.write("".center(53) + "\n")
+	f.write("Cashier ID: goody-mark".center(53) + "\n")
+	f.write("Date time also should be on the receipt".center(53) + "\n")
+	f.write("".center(53) + "\n")
+	f.write('*****************************************************\n')
+	f.write('Item        | Unit    | Price  |  Amount  |    Total\n')
+
 	
-    while not itemlist == 6:
-        itemx = float(itemPrice[itemlist])
-        itemy = float(itemPrice[itemlist])
-        PrintReceipt()
-        itemlist = itemlist +1
-    f.write("*****************************************************\n")
-    total = sum(price)
-    f.write(f"                                               {total}\n")
+	while not itemlist == 6:
+		itemx = float(itemPrice[itemlist])
+		itemy = float(itemPrice[itemlist])
+		PrintReceipt()
+		itemlist = itemlist +1
+	f.write("*****************************************************\n")
+	total = sum(price)
+	f.write(f"                                               {total}\n")
 print("*****************************************************")
 total = sum(price)
 print("                                              ", total)
